@@ -48,15 +48,15 @@ const AppHeader = () => {
           <div style={{ display: "flex", alignItems: "center" }}>
             <Link to="/">
               {activeTheme === "dark" ? (
-                <img src={logoDark} className="w-16" alt="Dark Logo" />
+                <img src={logoDark} className="w-12" alt="Dark Logo" />
               ) : (
-                <img src={logoLight} className="w-16" alt="Light Logo" />
+                <img src={logoLight} className="w-12" alt="Light Logo" />
               )}
             </Link>
             {activeTheme === "dark" ? (
               <span
                 className="inline px-3 text-2xl text-gray-900  "
-                style={{ marginLeft: "1rem", fontWeight: "550" }}
+                style={{ marginLeft: "0.5rem", fontWeight: "550" }}
               >
                 Rishav
               </span>
