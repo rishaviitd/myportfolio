@@ -16,20 +16,20 @@ function App() {
   return (
     <AnimatePresence>
       <div className=" bg-secondary-light dark:bg-primary-dark transition duration-300">
-        <Router>
+        <Router basename="/myportfolio">
           <ScrollToTop />
           <AppHeader />
           <Suspense fallback={""}>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="projects" element={<Projects />} />
+              <Route path="/projects" element={<Projects />} />
               <Route
                 path="projects/single-project"
                 element={<ProjectSingle />}
               />
 
-              <Route path="about" element={<About />} />
-              <Route path="contact" element={<Contact />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </Suspense>
           <AppFooter />
